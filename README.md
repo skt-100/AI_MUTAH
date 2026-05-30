@@ -119,5 +119,5 @@ Faculty of Information Technology — Mutah University
 ## 📄 License
 
 This project is developed exclusively for academic purposes at Mutah University.
-ؤ
+
 copyright@sofyantarawneh
