@@ -1,0 +1,10 @@
+Smart_Registration/
+│
+├── settings.py
+├── database.py
+├── priority.py
+├── registration.py
+├── main.py
+│
+└── Templates/
+    └── index.html

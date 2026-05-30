@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعضاء الهيئة التدريسية — جامعة مؤتة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link class="page-style" rel="stylesheet" href="/Information_Technology/CSS/Students/student_instructor.css">
+</head>
+<body>
+
+    <header class="topbar"></header>
+
+    <div class="layout">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main-content">
+
+            <div class="welcome-banner">
+                <div class="welcome-inner">
+                    <span class="welcome-icon">👨‍🏫</span>
+                    <span class="welcome-text">أعضاء الهيئة التدريسية — تعرف على مدرسي الكلية للتواصل المباشر بجامعة مؤتة.</span>
+                </div>
+            </div>
+
+            <section class="faculty-about">
+                <h2 class="about-title">كلية تكنولوجيا المعلومات</h2>
+                <div class="about-divider"></div>
+                <p class="about-text">
+                    أنشئت كلية تكنولوجيا المعلومات مع بداية العام الجامعي 2016 امتداداً لقسم الحاسوب الذي تم إنشاؤه عام 1984،
+                    تضم الكلية في أروقتها العديد من التخصصات لدرجة البكالوريوس وهي: تخصص علم الحاسوب، وتخصص علم البيانات والذكاء الاصطناعي،
+                    وتخصص هندسة البرمجيات، وبرنامج الماجستير في علم الحاسوب. جاء استحداث الكلية لمواكبة التطور المتسارع في قطاع
+                    تكنولوجيا المعلومات والاتصالات على المستوى المحلي والعالمي، وقد شهدت أقسام الكلية تطوراً نوعياً واضحاً من
+                    خلال تبنيها أحدث الخطط الدراسية واستحداث تخصصات جديدة تواكب تطورات سوق العمل والثورة التكنولوجية الحديثة.
+                </p>
+                <p class="about-text">
+                    تضم الكلية العديد من أعضاء الهيئة التدريسية بمختلف التخصصات الأكاديمية ممن يمتلكون المعرفة والقدرات العالية
+                    من أجل صقل وتوجيه مهارات الطلبة لتحقيق أفضل مستوى تعليمي لهم. كما توفر الكلية العديد من المختبرات المجهزة
+                    بأحدث الأجهزة الحاسوبية ومرفقاتها، وتحرص على تبني العديد من النشاطات والندوات والمساهمة في رفع المستوى
+                    العلمي لطلبتها وكادرها الوظيفي.
+                </p>
+                <p class="about-text">
+                    تهدف الكلية من خلال رؤيتها ورسالتها إلى رفد وتغطية احتياجات السوق المحلي بالكفاءات المتميزة والمختصة في
+                    مجالات تكنولوجيا المعلومات وأدوات التكنولوجيا الحديثة، والسعي إلى تطوير برامجها في مرحلة البكالوريوس
+                    والدراسات العليا بشكل مستمر لتحسين المنتج وسد حاجة المجتمع المحلي.
+                </p>
+            </section>
+
+            <section class="instructors-section">
+                <h2 class="instructors-title">الهيئة التدريسية</h2>
+                <div class="instructors-title-divider"></div>
+
+                <div class="search-wrap">
+                    <input type="text" id="searchInstructor" placeholder="ابحث باسم الدكتور أو المدرس...">
+                </div>
+
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="السابق">&#8250;</button>
+
+                    <div class="carousel-viewport" id="carouselViewport">
+                        <div class="carousel-track" id="carouselTrack">
+
+                            <div id="loadingMessage" class="carousel-loading">
+                                <p>⏳ جاري جلب قائمة المدرسين حياً من قاعدة البيانات...</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="التالي">&#8249;</button>
+                </div>
+
+                <div class="carousel-dots" id="carouselDots"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="/Information_Technology/JS/Students/student_instructor.js"></script>
+    <script src="/Information_Technology/JS/bot.js"></script>
+</body>
+</html>

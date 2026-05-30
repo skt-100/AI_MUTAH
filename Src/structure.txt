@@ -1,0 +1,42 @@
+Project/Src/
+│
+├── API/                                    
+│   ├── server.py                           
+│   ├── settings.py                        
+│   ├── faculties.py
+│   └── Information_Technology/
+│       └── Web/
+│           ├── Students/
+│           │   ├── student_login.py
+│           │   ├── student_dashboard.py    
+│           │   ├── student_registration.py
+│           │   ├── student_honorboard.py
+│           │   ├── student_instructor.py
+│           │   └── student_sidebar.py
+│           └── Instructors/
+│               ├── instructor_login.py
+│               ├── instructor_pages.py     
+│               ├── instructor_student.py   
+│               ├── instructor_sidebar.py
+│               ├── instructor_topbar.py
+│               └── instructor_notification.py  
+│
+├── Web/Information_Technology/             
+│   ├── HTML/
+│   │   ├── Students/
+│   │   └── Instructors/
+│   ├── CSS/
+│   │   ├── Students/
+│   │   └── Instructors/
+│   └── JS/
+│       ├── Students/
+│       └── Instructors/
+│
+└── Notifications/                          
+    ├── main.py
+    ├── notifier.py
+    ├── database.py
+    ├── message.py
+    ├── sender.py
+    ├── settings.py
+    └── templates/index.html

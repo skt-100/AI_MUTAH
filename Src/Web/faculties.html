@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة مؤتة — بوابة الكليات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faculties.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-logo">
+              <img src=".img/mutah_logo.png" alt="شعار جامعة مؤتة" style="width: 55px; height: 55px; object-fit: contain;">
+            </div>
+            <div class="header-text">
+                <span class="header-badge">MU — MUTAH UNIVERSITY · تأسست 1981</span>
+                <h1 class="header-title">جامعة مؤتة</h1>
+                <p class="header-sub">المملكة الأردنية الهاشمية — الكرك · نحو معرفة أصيلة وقيادة رسالية</p>
+                <div class="header-stats">
+                    <span class="stat-pill"><strong>14</strong> كلية أكاديمية</span>
+                    <span class="stat-pill"><strong>+35,000</strong> طالب وطالبة</span>
+                    <span class="stat-pill"><strong>+1,400</strong> عضو هيئة تدريس</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-wrap">
+        <div class="search-inner">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" id="searchInput" placeholder="ابحث عن كليتك...">
+            <span class="search-count" id="searchCount">جاري التحميل...</span>
+        </div>
+    </div>
+
+    <section class="grid-section">
+        <p class="section-label">اختر كليتك للدخول إلى البوابة الأكاديمية</p>
+
+        <div class="faculties-grid" id="facultiesGrid">
+            
+            <div class="no-results" id="noResults">
+                <p>🔍 لا توجد كليات تطابق بحثك</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        جميع الحقوق محفوظة © 2026 جامعة مؤتة — المملكة الأردنية الهاشمية · الكرك
+    </footer>
+
+    <script src="faculties.js"></script>
+</body>
+</html>

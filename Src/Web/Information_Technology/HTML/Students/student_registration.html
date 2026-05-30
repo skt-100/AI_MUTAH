@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة الطالب — تسجيل المواد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Information_Technology/CSS/Students/student_registration.css">
+</head>
+<body>
+
+    <header class="topbar"></header>
+
+    <div class="layout">
+        
+        <aside class="sidebar"></aside>
+
+        <main class="main-content">
+            
+            <div class="welcome-banner">
+                <div class="welcome-inner">
+                    <span class="welcome-icon">ℹ️</span>
+                    <span class="welcome-text">مرحباً بك في شاشة سحب وإضافة المواد الدراسية للفصل الدراسي الحالي بجامعة مؤتة.</span>
+                </div>
+            </div>
+
+           <div class="section-title">🔍 إضافة مادة جديدة</div>
+            <div class="registration-control-box">
+                <div class="search-form-row">
+                    <div class="input-group">
+                        <label for="courseid">رقم المادة</label>
+                        <input type="text" id="courseid" placeholder="مثال: 0301411">
+                    </div>
+                    <div class="input-group">
+                        <label for="sectionnumber">رقم الشعبة</label>
+                        <input type="number" id="sectionnumber" placeholder="مثال: 1" min="1">
+                    </div>
+                    <div class="input-group btn-wrapper">
+                        <button class="btn-action-register" id="btnaddcourse">➕ إضافة المادة</button>
+                    </div>
+                </div>
+                <div id="reg-msg" class="form-msg"></div>
+            </div>
+
+            <div class="section-title">⏳ المواد المراد تسجيلها (طلبات الانتظار)</div>
+            <div class="table-container">
+                <table class="courses-table" id="pendingcoursestable">
+                  <thead>
+                      <tr>
+                          <th>رقم المادة</th>
+                          <th>اسم المادة</th>
+                          <th>الساعات</th>
+                          <th>الشعبة</th>
+                          <th>الوقت</th>
+                          <th>الأيام</th>
+                          <th>القاعة</th>
+                          <th>الأولوية (من 100)</th> 
+                          <th>إجراء</th> </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="empty-row" id="pendingemptyrow">
+                          <td colspan="9" class="no-courses-cell"> <p class="empty-table-text">🛒 لا توجد طلبات تسجيل مضافة حالياً</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+
+            <div class="registration-note-box">
+                <span class="note-icon">💡</span>
+                <p class="note-text"><strong>ملاحظة:</strong> هذه المواد سوف تتم إضافتها لحظة فتح التسجيل بشكل تلقائي.</p>
+            </div>
+
+            <div class="submit-action-wrapper">
+                <button class="btn-action-register" id="btnconfirmsubmit">💾 تثبيت وإرسال الجدول النهائي</button>
+            </div>
+            
+            <div id="delete-modal" class="modal-overlay">
+              <div class="modal-box">
+                  <div class="modal-icon">⚠️</div>
+                  <h3 class="modal-title">تأكيد إزالة المادة</h3>
+                  <p class="modal-text" id="modal-course-name">هل أنت متأكد من رغبتك في إزالة هذه المادة من قائمة المواد المراد تسجيلها؟</p>
+                  <div class="modal-actions">
+                      <button id="modal-confirm-btn" class="modal-btn btn-danger">حذف</button>
+                      <button id="modal-cancel-btn" class="modal-btn btn-secondary">إلغاء</button>
+                  </div>
+              </div>
+          </div>
+
+            <div class="section-title">📋 المواد المسجلة والمثبتة فعلياً</div>
+            <div class="table-container">
+                <table class="courses-table" id="registeredcoursestable">
+                    <thead>
+                        <tr>
+                            <th>رقم المادة</th>
+                            <th>اسم المادة</th>
+                            <th>الساعات</th>
+                            <th>الشعبة</th>
+                            <th>الوقت والأيام</th>
+                            <th>القاعة</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="empty-row" id="registeredemptyrow">
+                            <td colspan="7" class="no-courses-cell">
+                                <p class="empty-table-text">🔄 لا توجد مواد مسجلة ومثبتة في حسابك لهذا الفصل حالياً</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="/Information_Technology/JS/Students/student_registration.js"></script>
+    <script src="/Information_Technology/JS/bot.js"></script>
+</body>
+</html>

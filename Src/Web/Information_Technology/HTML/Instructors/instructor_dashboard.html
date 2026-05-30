@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم المسؤول — Smart IT Faculty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Information_Technology/CSS/Instructors/instructor_dashboard.css">
+</head>
+<body>
+
+    <header class="topbar"></header>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar"></aside>
+
+        <main class="admin-content">
+
+            <div class="welcome-banner">
+                <div class="welcome-inner">
+                    <span class="welcome-icon">⚙️</span>
+                    <span class="welcome-text">مرحباً <strong id="welcomeInstructorName"></strong>، هذه لوحة التحكم الخاصة بك في كلية تكنولوجيا المعلومات.</span>
+                </div>
+            </div>
+
+            <!-- ── البطاقات الأربع ── -->
+            <div class="stats-grid">
+                <div class="stat-card blue">
+                    <div class="stat-icon">📚</div>
+                    <p class="stat-num" id="stat-courses">—</p>
+                    <p class="stat-label">موادي الدراسية</p>
+                    <p class="stat-sub">عدد المواد التي تدرّسها</p>
+                </div>
+                <div class="stat-card orange">
+                    <div class="stat-icon">🏫</div>
+                    <p class="stat-num" id="stat-sections">—</p>
+                    <p class="stat-label">شُعَبي الدراسية</p>
+                    <p class="stat-sub">إجمالي الشعب المخصصة لك</p>
+                </div>
+                <div class="stat-card green">
+                    <div class="stat-icon">👨‍🎓</div>
+                    <p class="stat-num" id="stat-students">—</p>
+                    <p class="stat-label">إجمالي طلابي</p>
+                    <p class="stat-sub">في جميع الشعب</p>
+                </div>
+                <div class="stat-card purple">
+                    <div class="stat-icon">⏳</div>
+                    <p class="stat-num" id="stat-requests">—</p>
+                    <p class="stat-label">طلبات توسعة الشعبة</p>
+                    <p class="stat-sub">طلبات معلقة في شعبك</p>
+                </div>
+            </div>
+
+            <!-- ── جدول الشعب ── -->
+            <div class="section-title">📋 شُعَبي الدراسية</div>
+            <div class="sections-table-box">
+                <table class="sections-table">
+                    <thead>
+                        <tr>
+                            <th>اسم المادة</th>
+                            <th>الشعبة</th>
+                            <th>مسجّل</th>
+                            <th>الطاقة</th>
+                            <th>نسبة الإشغال</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sectionsTableBody">
+                        <tr><td colspan="5" style="text-align:center; padding:30px; color:#94a3b8;">⏳ جاري تحميل الشعب...</td></tr>
+                    </tbody>
+                    <tfoot id="sectionsTableFoot"></tfoot>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="/Information_Technology/JS/Instructors/instructor_dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* === ─── تنسيقات شاشة إدارة الطلاب (ذهبي) ─── === */
+
+:root {
+    --bg: #fdfbf5;
+    --topbar-h: 65px;
+    --gold-main: #b45309;
+    --gold-light: #fbbf24;
+    --gold-border: #fcd34d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    background-color: var(--bg);
+    color: #1e293b;
+}
+
+.layout {
+    display: flex;
+    margin-top: 65px;
+    height: calc(100vh - 65px);
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    animation: contentFadeIn 0.4s ease;
+}
+
+@keyframes contentFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* تصميم البوكس الأبيض الاحترافي */
+.white-card {
+    background-color: #ffffff;
+    border: 1px solid var(--gold-border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.06);
+    transition: box-shadow 0.25s ease;
+}
+
+.white-card:hover {
+    box-shadow: 0 6px 20px rgba(180, 83, 9, 0.1);
+}
+
+.welcome-banner {
+    background: linear-gradient(135deg, #78350f, #92400e);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #b45309;
+    animation: bannerFadeIn 0.5s ease;
+}
+
+@keyframes bannerFadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.welcome-inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-icon {
+    font-size: 24px;
+    animation: iconPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.15); }
+}
+
+.welcome-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.selection-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #92400e;
+}
+
+/* القوائم المنسدلة */
+.table-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--gold-border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #1e293b;
+    outline: none;
+    background-color: #fffbeb;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.table-input:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+/* أزرار التبديل */
+.tab-button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+}
+
+/* جداول البيانات */
+.table-section-card h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #78350f;
+    margin-bottom: 8px;
+}
+
+.table-responsive-box {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--gold-border);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+    font-size: 14px;
+}
+
+.data-table th {
+    background-color: #fffbeb;
+    color: #92400e;
+    padding: 14px 16px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--gold-border);
+}
+
+.data-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #fef3c7;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.data-table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.data-table tbody tr:hover {
+    background-color: #fffbeb;
+}
+
+/* مدخلات الأعداد */
+.table-counter-input, .grade-input {
+    width: 75px;
+    padding: 6px 10px;
+    border: 1px solid var(--gold-border);
+    border-radius: 4px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fffbeb;
+    transition: border-color 0.2s ease;
+}
+
+.grade-input:focus, .table-counter-input:focus {
+    border-color: #f59e0b;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+/* زر رصد الغياب */
+.absent-trigger-btn {
+    background-color: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fca5a5;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.absent-trigger-btn:hover {
+    background-color: #ef4444;
+    color: white;
+    transform: scale(1.03);
+}
+
+.action-footer {
+    margin-top: 25px;
+    text-align: left;
+}
+
+/* زر الحفظ — ذهبي */
+.submit-btn {
+    background: linear-gradient(135deg, #d97706, #b45309);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.25);
+    transition: all 0.2s ease;
+    border: 1px solid #b45309;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #b45309, #92400e);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(180, 83, 9, 0.35);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}

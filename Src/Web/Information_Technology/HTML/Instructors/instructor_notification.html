@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إرسال الإشعارات | Smart IT Faculty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Information_Technology/CSS/Instructors/instructor_notification.css">
+</head>
+<body>
+
+    <header class="topbar"></header>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar"></aside>
+
+        <main class="admin-content">
+
+            <div class="welcome-banner">
+                <div class="welcome-inner">
+                    <span class="welcome-icon">🔔</span>
+                    <span class="welcome-text">من هنا يمكنك إرسال إشعار فوري لجميع الطلاب المسجلين في شعبة معينة عند حدوث أي تغيير.</span>
+                </div>
+            </div>
+
+            <!-- ── أنواع التغييرات المدعومة ── -->
+            <div class="info-card">
+                <div class="info-card-title">
+                    <span>📋</span> أنواع التغييرات المدعومة
+                </div>
+                <div class="info-grid">
+                    <div class="info-chip">🕐 <strong>وقت</strong> — تغيير وقت بدء المحاضرة</div>
+                    <div class="info-chip">🏫 <strong>قاعة</strong> — تغيير موقع القاعة</div>
+                    <div class="info-chip">👨‍🏫 <strong>مدرس</strong> — تغيير المدرس عبر رقم ID</div>
+                    <div class="info-chip">📅 <strong>يوم</strong> — تغيير يوم المحاضرة</div>
+                </div>
+            </div>
+
+            <!-- ── نموذج الإشعار ── -->
+            <div class="notif-card">
+                <div class="notif-card-title">
+                    <span>✏️</span> تعديل شعبة وإرسال إشعار
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="courseSelect">المادة الدراسية</label>
+                        <select id="courseSelect" class="form-input">
+                            <option value="">— اختر المادة —</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sectionSelect">الشعبة</label>
+                        <select id="sectionSelect" class="form-input" disabled>
+                            <option value="">— اختر الشعبة —</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="changeType">نوع التغيير</label>
+                        <select id="changeType" class="form-input">
+                            <option value="">— اختر نوع التغيير —</option>
+                            <option value="وقت">🕐 وقت المحاضرة</option>
+                            <option value="قاعة">🏫 قاعة المحاضرة</option>
+                            <option value="مدرس">👨‍🏫 مدرس المادة</option>
+                            <option value="يوم">📅 يوم المحاضرة</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="newValue">القيمة الجديدة</label>
+                        <input type="text" id="newValue" class="form-input" placeholder="اختر نوع التغيير أولاً" disabled>
+                        <span class="field-hint" id="fieldHint"></span>
+                    </div>
+                </div>
+
+                <div class="form-divider">سيتم تحديث قاعدة البيانات وإرسال إشعار لجميع الطلاب المسجلين في الشعبة</div>
+
+                <button id="submitBtn" class="submit-btn" disabled>
+                    <span id="btnText">🚀 تطبيق التغيير وإرسال الإشعارات</span>
+                    <span class="btn-spinner" id="btnSpinner"></span>
+                </button>
+
+                <div class="result-box" id="resultBox"></div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="/Information_Technology/JS/Instructors/instructor_notification.js"></script>
+</body>
+</html>

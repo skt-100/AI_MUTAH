@@ -1,0 +1,11 @@
+Notification_system/
+│
+├── settings.py
+├── database.py
+├── message.py
+├── sender.py
+├── notifier.py    
+├── app.py          
+│
+└── templates/
+    └── index.html

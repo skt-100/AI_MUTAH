@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة مؤتة — بوابة الدخول</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main_login.css">
+</head>
+<body>
+
+    <!-- خلفية الجسيمات -->
+    <div class="bg-particles" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="page-wrapper">
+
+        <!-- ─── الهيدر ─── -->
+        <header class="top-bar">
+            <a href="../HTML/faculty_landing.html" class="back-btn">
+                <span class="back-icon">→</span>
+                <span>العودة للكليات</span>
+            </a>
+            <div class="top-bar-center">
+                 <div class="header-logo">
+                  <img src="../.img/mutah_logo.png" alt="شعار جامعة مؤتة" style="width: 55px; height: 55px; object-fit: contain;">
+                </div>
+                <span class="top-name">جامعة مؤتة</span>
+            </div>
+            <div class="top-bar-spacer"></div>
+        </header>
+
+        <!-- ─── قسم الترحيب ─── -->
+        <section class="hero">
+            <p class="hero-eyebrow">بوابة الدخول الأكاديمية</p>
+            <h1 class="hero-title">
+                أهلاً بك في
+                <span class="hero-faculty" id="facultyName">كلية تكنولوجيا المعلومات</span>
+            </h1>
+            <p class="hero-sub">اختر نوع حسابك للمتابعة إلى لوحة التحكم الخاصة بك</p>
+        </section>
+
+        <!-- ─── شبكة البطاقات ─── -->
+        <main class="cards-grid">
+
+            <!-- بطاقة الطالب -->
+            <a class="role-card card-student" href="./student_login.html">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon">🎓</div>
+                        <div class="card-icon-ring"></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">طالب</h2>
+                        <p class="card-desc">الاطلاع على المواد والجداول ونتائج التسجيل</p>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="card-tag">Student Portal</span>
+                        <span class="card-arrow">←</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- بطاقة المدرس -->
+            <a class="role-card card-teacher" href="./teacher_login.html">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon">📖</div>
+                        <div class="card-icon-ring"></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">مدرّس</h2>
+                        <p class="card-desc">إدارة المواد والشعب وكشوفات الطلاب</p>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="card-tag">Instructor Portal</span>
+                        <span class="card-arrow">←</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- بطاقة العميد -->
+            <a class="role-card card-dean" href="./dean_login.html">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon">🏛️</div>
+                        <div class="card-icon-ring"></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">عميد</h2>
+                        <p class="card-desc">الإشراف على الكلية ومتابعة التقارير والإحصاءات</p>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="card-tag">Dean Portal</span>
+                        <span class="card-arrow">←</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- بطاقة الأدمن -->
+            <a class="role-card card-admin" href="./admin_login.html">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon">⚙️</div>
+                        <div class="card-icon-ring"></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">أدمن</h2>
+                        <p class="card-desc">إدارة المستخدمين والبيانات وضبط إعدادات النظام</p>
+                    </div>
+                    <div class="card-footer-row">
+                        <span class="card-tag">Admin Portal</span>
+                        <span class="card-arrow">←</span>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+
+        <footer class="page-footer">
+            جميع الحقوق محفوظة © 2026 جامعة مؤتة — المملكة الأردنية الهاشمية
+        </footer>
+
+    </div>
+
+    <script src="./main_login.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الشرف — كلية تكنولوجيا المعلومات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/Information_Technology/CSS/Students/student_honorboard.css">
+</head>
+<body>
+
+    <header class="topbar"></header>
+
+    <div class="layout">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main-content">
+
+            <div class="welcome-banner">
+                <div class="welcome-inner">
+                    <span class="welcome-icon">🏆</span>
+                    <span class="welcome-text">
+                        لوحة شرف كلية تكنولوجيا المعلومات — نخبة المتميزين للعام الأكاديمي الحالي بجامعة مؤتة.
+                    </span>
+                </div>
+            </div>
+
+            <div class="registration-control-box">
+                <div class="search-form-row">
+                    <div class="input-group" style="flex: 1;">
+                        <label for="searchInput">البحث السريع عن طالب</label>
+                        <input type="text" id="searchInput" placeholder="اكتب اسم الطالب للفلترة الفورية...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">🤖 تخصص الذكاء الاصطناعي وعلم البيانات</div>
+            <div class="table-container">
+                <table class="courses-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>اسم الطالب</th>
+                            <th>الساعات المقطوعة</th>
+                            <th>المعدل الفصلي</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ai-students"></tbody>
+                </table>
+            </div>
+
+            <div class="section-title">💻 تخصص هندسة البرمجيات</div>
+            <div class="table-container">
+                <table class="courses-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>اسم الطالب</th>
+                            <th>الساعات المقطوعة</th>
+                            <th>المعدل الفصلي</th>
+                        </tr>
+                    </thead>
+                    <tbody id="se-students"></tbody>
+                </table>
+            </div>
+
+            <div class="section-title">🖥️ تخصص علم الحاسوب</div>
+            <div class="table-container">
+                <table class="courses-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>اسم الطالب</th>
+                            <th>الساعات المقطوعة</th>
+                            <th>المعدل الفصلي</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cs-students"></tbody>
+                </table>
+            </div>
+
+            <div class="section-title">📊 تخصص نظم المعلومات الحاسوبية</div>
+            <div class="table-container">
+                <table class="courses-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>اسم الطالب</th>
+                            <th>الساعات المقطوعة</th>
+                            <th>المعدل الفصلي</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cis-students"></tbody>
+                </table>
+            </div>
+
+            <div class="section-title">🛡️ تخصص أمن المعلومات والأدلة الرقمية</div>
+            <div class="table-container">
+                <table class="courses-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>اسم الطالب</th>
+                            <th>الساعات المقطوعة</th>
+                            <th>المعدل الفصلي</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cyber-students"></tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+    <script src="/Information_Technology/JS/Students/student_honorboard.js"></script>
+    <script src="/Information_Technology/JS/bot.js"></script>
+</body>
+</html>
