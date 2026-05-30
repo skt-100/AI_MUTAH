@@ -2,16 +2,6 @@
 
 A full-stack academic management web portal for the Faculty of Information Technology at Mutah University, featuring dedicated dashboards for students and instructors, real-time database integration, an intelligent chatbot assistant, and an automated email notification system.
 
----
-
-## 🖥️ Live Preview
-
-| Service | URL |
-|---|---|
-| Main App Server | `http://localhost:5000` |
-| Notification Service | `http://localhost:5001` |
-
----
 
 ## ✨ Features
 
@@ -116,79 +106,7 @@ Project/Src/
 | `honor_board` | Top student records |
 | `student_records` | Historical grade records |
 
----
 
-## ⚙️ Setup & Run
-
-### Prerequisites
-- Python 3.10+
-- MySQL 8.0+
-
-```bash
-pip install -r requirements.txt
-```
-
-### 1. Configure Database
-
-Open `API/settings.py` and update:
-
-```python
-DB_HOST     = "localhost"
-DB_USER     = "your_user"
-DB_PASSWORD = "your_password"
-DB_NAME     = "information_technology"
-```
-
-### 2. Run the Main Server
-
-```bash
-cd Project/Src
-python -m API.server
-```
-
-### 3. Run the Notification Service *(Optional)*
-
-```bash
-cd Project/Src/Notifications
-python main.py
-```
-
----
-
-## 🔐 Default Roles & Redirections
-
-| Role | Login Method | Redirect |
-|---|---|---|
-| Student | Student ID | `/Information_Technology/HTML/Students/student_dashboard.html` |
-| Instructor | Employee ID | `/Information_Technology/HTML/Instructors/instructor_dashboard.html` |
-
----
-
-## 🎨 Design System
-
-- **Direction** — RTL (Arabic-first layouts)
-- **Palette** — Warm gold theme (`#b45309`, `#d97706`, `#fbbf24`, `#fdfbf5`)
-- **Topbar** — Fixed dark-brown gradient with gold branding accents
-- **Sidebar** — Clean white background with active gold indicator states
-- **Animations** — `cardSlideIn`, `bannerFadeIn`, `iconPulse`, `topbarSlide`
-- **Components** — Stat cards, progress bars, data tables, carousels, modals
-
----
-
-## 📸 Pages Overview
-
-| Page | Description |
-|---|---|
-| `student_login` / `instructor_login` | Secure authentication interfaces |
-| `student_dashboard` | Personal stats, notifications, courses |
-| `student_registration` | Course search, filtering & enrollment |
-| `student_honorboard` | Top student academic rankings |
-| `student_instructor` | Faculty members directory carousel |
-| `instructor_dashboard` | Instructor statistics & section rosters |
-| `instructor_student` | Attendance tracking & grade sheets |
-| `instructor_notification` | Target panel to trigger email dispatches |
-
----
 
 ## 👨‍💻 Author
 
